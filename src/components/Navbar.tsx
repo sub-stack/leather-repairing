@@ -13,6 +13,11 @@ export default function Navbar() {
     { name: "門市地點", href: "#locations" },
     { name: "聯絡查詢", href: "#contact" },
   ];
+  const baseUrl = import.meta.env.BASE_URL.endsWith("/")
+    ? import.meta.env.BASE_URL
+    : `${import.meta.env.BASE_URL}/`;
+
+  const logoSrc = `${baseUrl}img/logo.png`;
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-cream-white/90 backdrop-blur-md border-b border-ink-navy/5">
