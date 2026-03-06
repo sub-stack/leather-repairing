@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Inter", sans-serif;
+  
+  --color-ink-navy: #0B1020;
+  --color-warm-coral: #F25C54;
+  --color-leather-tan: #B8835A;
+  --color-cream-white: #F8F3EE;
+  --color-soft-gold: #D8B36A;
+  --color-fresh-green: #5FAF7B;
+  
+  --color-success: #2E9B61;
+  --color-warning: #E8A23A;
+  --color-error: #D94C4C;
+  --color-info: #4D7CFE;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream-white);
+  color: var(--color-ink-navy);
+}
